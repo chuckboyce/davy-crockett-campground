@@ -1,0 +1,196 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout>
+  <Navbar />
+  
+  <div class="bg-forest-900 py-16 text-center">
+    <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl font-serif">
+      Our Cabins
+    </h1>
+    <p class="mt-4 max-w-2xl mx-auto text-xl text-forest-200">
+      Rustic charm meets modern comfort.
+    </p>
+  </div>
+
+<div class="bg-gray-50 py-12 sm:py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    
+    <!-- Introduction -->
+    <div class="max-w-3xl mx-auto text-center pb-12">
+      <h2 class="text-3xl font-serif font-extrabold text-forest-900 sm:text-4xl">
+        Cabin Rentals
+      </h2>
+      <p class="mt-4 text-xl text-gray-500">
+        From cozy couples' retreats to spacious family lodges, we have the perfect cabin for your Tennessee getaway. All cabins include linens, AC/Heat, and charcoal grills.
+      </p>
+    </div>
+
+    <!-- Cabin Listing 1: Pioneer Cabin -->
+    <div id="pioneer" class="bg-white rounded-lg shadow-xl overflow-hidden mb-16 lg:grid lg:grid-cols-2 lg:gap-4">
+      <div class="relative h-64 lg:h-auto">
+        <img class="absolute inset-0 h-full w-full object-cover" src="/pioneer_cabin.png" alt="Pioneer Cabin Exterior">
+      </div>
+      <div class="p-8 flex flex-col justify-between">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-2xl font-serif font-bold text-forest-900">Pioneer Cabin</h3>
+            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-forest-100 text-forest-800">
+              Most Popular
+            </span>
+          </div>
+          <div class="grid grid-cols-2 gap-4 mb-6 text-sm text-gray-600">
+             <div class="flex items-center">
+                <svg class="h-5 w-5 mr-2 text-forest-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                Sleeps 4-5
+             </div>
+             <div class="flex items-center">
+                <svg class="h-5 w-5 mr-2 text-forest-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                1 Bedroom + Loft
+             </div>
+             <div class="flex items-center">
+                <svg class="h-5 w-5 mr-2 text-forest-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+                Kitchenette
+             </div>
+             <div class="flex items-center">
+                <svg class="h-5 w-5 mr-2 text-forest-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+                Private Bath
+             </div>
+          </div>
+          <p class="text-gray-600 mb-6">
+            Our Pioneer Cabins are a camper favorite. Downstairs features a queen bed and kitchenette. Kids love the sleeping loft with twin mattresses (bring your own sleeping bags for the loft!). Enjoy your morning coffee on the covered porch swing.
+          </p>
+          
+          <div class="grid grid-cols-3 gap-2 mb-6">
+             <img src="/pioneer-kitchen.jpg" alt="Pioneer Kitchen" class="rounded h-20 w-full object-cover">
+             <img src="/pioneer-living.jpg" alt="Pioneer Living Area" class="rounded h-20 w-full object-cover">
+             <img src="/pioneer-bedroom.jpg" alt="Pioneer Bedroom" class="rounded h-20 w-full object-cover">
+          </div>
+        </div>
+        
+        <div class="flex items-center justify-between pt-6 border-t border-gray-100">
+           <div>
+              <span class="text-3xl font-bold text-forest-900">$89</span>
+              <span class="text-gray-500">/night</span>
+           </div>
+           <a href="https://www.campspot.com/book/davycrockettcampground" target="_blank" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-forest-600 hover:bg-forest-700">
+             Book This Cabin
+           </a>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Cabin Listing 2: Bear Cabin -->
+    <div id="bear" class="bg-white rounded-lg shadow-xl overflow-hidden mb-16 lg:grid lg:grid-cols-2 lg:gap-4">
+      <div class=" lg:order-2 relative h-64 lg:h-auto">
+        <img class="absolute inset-0 h-full w-full object-cover" src="/bear-living.jpg" alt="Bear Cabin Interior">
+      </div>
+      <div class="p-8 flex flex-col justify-between lg:order-1">
+        <div>
+          <div class="flex justify-between items-center mb-4">
+            <h3 class="text-2xl font-serif font-bold text-forest-900">Bear Cabin</h3>
+            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-wood-100 text-wood-800">
+              Rustic Charm
+            </span>
+          </div>
+           <div class="grid grid-cols-2 gap-4 mb-6 text-sm text-gray-600">
+             <div class="flex items-center">
+                <svg class="h-5 w-5 mr-2 text-forest-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                Sleeps 6
+             </div>
+             <div class="flex items-center">
+                <svg class="h-5 w-5 mr-2 text-forest-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                2 Bedrooms
+             </div>
+             <div class="flex items-center">
+                <svg class="h-5 w-5 mr-2 text-forest-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+                Full Kitchen
+             </div>
+             <div class="flex items-center">
+                <svg class="h-5 w-5 mr-2 text-forest-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" /></svg>
+                Two Baths
+             </div>
+          </div>
+          <p class="text-gray-600 mb-6">
+            Perfect for larger families. Features a master bedroom with a queen bed, a second bedroom with two full beds, and a comfortable living area. The full kitchen allows you to cook family meals right at your cabin.
+          </p>
+           <div class="grid grid-cols-3 gap-2 mb-6">
+             <img src="/bear-bed.jpg" alt="Bear Bedroom" class="rounded h-20 w-full object-cover">
+             <img src="/bear-bath3.jpg" alt="Bear Bath" class="rounded h-20 w-full object-cover">
+             <img src="/bear-living.jpg" alt="Bear Living" class="rounded h-20 w-full object-cover">
+          </div>
+        </div>
+        
+        <div class="flex items-center justify-between pt-6 border-t border-gray-100">
+           <div>
+              <span class="text-3xl font-bold text-forest-900">$125</span>
+              <span class="text-gray-500">/night</span>
+           </div>
+           <a href="https://www.campspot.com/book/davycrockettcampground" target="_blank" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-forest-600 hover:bg-forest-700">
+             Book This Cabin
+           </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cabin Listing 3: Wilderness Lodge -->
+    <div id="wilderness" class="bg-white rounded-lg shadow-xl overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4">
+      <div class="relative h-64 lg:h-auto">
+        <img class="absolute inset-0 h-full w-full object-cover" src="/wilderness-lodge.png" alt="Wilderness Lodge Exterior">
+      </div>
+      <div class="p-8 flex flex-col justify-between">
+        <div>
+           <div class="flex justify-between items-center mb-4">
+            <h3 class="text-2xl font-serif font-bold text-forest-900">Wilderness Lodge</h3>
+            <span class="inline-flex items-center px-3 py-0.5 rounded-full text-sm font-medium bg-forest-800 text-gold-400 text-white">
+              Luxury
+            </span>
+          </div>
+           <div class="grid grid-cols-2 gap-4 mb-6 text-sm text-gray-600">
+             <div class="flex items-center">
+                <svg class="h-5 w-5 mr-2 text-forest-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+                Sleeps 8
+             </div>
+             <div class="flex items-center">
+                <svg class="h-5 w-5 mr-2 text-forest-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                3 Bedrooms
+             </div>
+             <div class="flex items-center">
+                <svg class="h-5 w-5 mr-2 text-forest-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+                Full Kitchen + W/D
+             </div>
+             <div class="flex items-center">
+                <svg class="h-5 w-5 mr-2 text-forest-500" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                Private Hot Tub
+             </div>
+          </div>
+          <p class="text-gray-600 mb-6">
+            The ultimate camping experience. This beautiful lodge sits privately on the hill. It features a master suite with king bed, second bedroom with queen, and third with two twins. Includes washer/dryer, dishwasher, and a large deck with a hot tub.
+          </p>
+           <div class="grid grid-cols-3 gap-2 mb-6">
+             <img src="/wild-kit1.jpg" alt="Lodge Kitchen" class="rounded h-20 w-full object-cover">
+             <img src="/wild-view.jpg" alt="Lodge View" class="rounded h-20 w-full object-cover">
+             <img src="/wilderness-lounge.jpg" alt="Lodge Lounge" class="rounded h-20 w-full object-cover">
+          </div>
+        </div>
+        
+        <div class="flex items-center justify-between pt-6 border-t border-gray-100">
+           <div>
+              <span class="text-3xl font-bold text-forest-900">$225</span>
+              <span class="text-gray-500">/night</span>
+           </div>
+           <a href="https://www.campspot.com/book/davycrockettcampground" target="_blank" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-forest-600 hover:bg-forest-700">
+             Book The Lodge
+           </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+  <Footer />
+</Layout>

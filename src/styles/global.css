@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-forest-900: #1a2f24;
+  --color-forest-800: #2c4a3b;
+  /* Lighter forest for nav/footer */
+  --color-forest-700: #345e37;
+  /* Ravine Primary Green */
+  --color-forest-600: #4a7a50;
+  --color-forest-500: #629668;
+
+  --color-wood-900: #3e2723;
+  --color-wood-800: #5d4037;
+  --color-wood-600: #8d6e63;
+
+  --color-gold-500: #d4a373;
+  /* Ravine Gold Accent */
+  --color-gold-600: #c09163;
+
+  --color-cream-100: #fdf8f0;
+  /* Ravine Cream Background */
+  --color-cream-200: #f7f1e6;
+  --color-cream-300: #efe8db;
+
+  --font-serif: 'Corben', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+
+  --radius-xl: 1.5rem;
+  /* Ravine large border radius */
+}
+
+html,
+body {
+  @apply bg-cream-100 text-gray-800 antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-serif text-gray-900;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Global rounded images */
+img {
+  @apply rounded-3xl;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply bg-forest-700 hover:bg-forest-800 text-white font-medium py-3 px-8 rounded-full transition-colors duration-300 shadow-md hover:shadow-lg;
+}
+
+.btn-secondary {
+  @apply bg-gold-500 hover:bg-gold-600 text-white font-medium py-3 px-8 rounded-full transition-colors duration-300 shadow-md hover:shadow-lg;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-serif text-forest-900;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}

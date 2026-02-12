@@ -1,0 +1,72 @@
+---
+---
+
+<header class="bg-forest-900/95 sticky top-0 z-50 backdrop-blur-sm border-b border-forest-800 transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-24 items-center">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+        <a href="/" class="flex items-center group">
+          <img class="h-16 w-auto transition-transform duration-300 group-hover:scale-105" src="/logo.png" alt="Davy Crockett Campground Logo">
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex space-x-8 items-center">
+        <a href="/" class="text-white hover:text-gold-500 px-3 py-2 text-sm uppercase tracking-widest font-medium transition-colors">Home</a>
+        <a href="/cabins" class="text-white hover:text-gold-500 px-3 py-2 text-sm uppercase tracking-widest font-medium transition-colors">Cabins</a>
+        <a href="/rv-sites" class="text-white hover:text-gold-500 px-3 py-2 text-sm uppercase tracking-widest font-medium transition-colors">RV Sites</a>
+        <a href="/amenities" class="text-white hover:text-gold-500 px-3 py-2 text-sm uppercase tracking-widest font-medium transition-colors">Amenities</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden md:flex items-center">
+        <a href="https://www.campspot.com/book/davycrockettcampground" class="inline-flex items-center px-6 py-3 border border-transparent text-sm font-bold rounded-full text-white bg-gold-500 hover:bg-gold-600 shadow-md transition-transform hover:-translate-y-0.5 uppercase tracking-wide">
+          Book Now
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="flex items-center md:hidden">
+        <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gold-500 hover:text-white hover:bg-forest-800 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-gold-500" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <!-- Icon when menu is closed -->
+          <svg class="block h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <!-- Icon when menu is open -->
+          <svg class="hidden h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div class="hidden mobile-menu bg-forest-900 border-t border-forest-800" id="mobile-menu">
+    <div class="px-4 pt-4 pb-8 space-y-2 text-center">
+      <a href="/" class="block px-3 py-3 rounded-md text-base font-medium text-white hover:text-gold-500 hover:bg-forest-800">Home</a>
+      <a href="/cabins" class="block px-3 py-3 rounded-md text-base font-medium text-white hover:text-gold-500 hover:bg-forest-800">Cabins</a>
+      <a href="/rv-sites" class="block px-3 py-3 rounded-md text-base font-medium text-white hover:text-gold-500 hover:bg-forest-800">RV Sites</a>
+      <a href="/amenities" class="block px-3 py-3 rounded-md text-base font-medium text-white hover:text-gold-500 hover:bg-forest-800">Amenities</a>
+       <a href="https://www.campspot.com/book/davycrockettcampground" class="block mt-4 px-6 py-3 rounded-full text-base font-bold text-white bg-gold-500 hover:bg-gold-600">
+          Book Now
+        </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Simple mobile menu toggle
+  const btn = document.querySelector('button[aria-controls="mobile-menu"]');
+  const menu = document.getElementById('mobile-menu');
+
+  if(btn && menu) {
+    btn.addEventListener('click', () => {
+      const expanded = btn.getAttribute('aria-expanded') === 'true' || false;
+      btn.setAttribute('aria-expanded', (!expanded).toString());
+      menu.classList.toggle('hidden');
+    });
+  }
+</script>

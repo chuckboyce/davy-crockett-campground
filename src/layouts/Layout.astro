@@ -6,12 +6,23 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Davy Crockett Campground</title>
 	</head>
 	<body>
 		<slot />
 	</body>
 </html>
+
+<style is:global>
+	@import "../styles/global.css";
+	
+	html,
+	body {
+		font-family: system-ui, sans-serif;
+		background: #fdfbf7; /* Warm off-white */
+		color: #1a202c;
+	}
+</style>
 
 <style>
 	html,
